@@ -1,0 +1,214 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+body{
+	font-family: 'Lato', Arial, sans-serif;
+	font-size: 14px;
+	color: #24292d;
+	text-align: center;
+	line-height: 1.6;
+}
+
+header{
+	background: url(../images/mountain.jpg) center;
+	background-size: cover;
+	/*vh = viewport height. This won't work in IE8 but you can use two values here to allow for that height: 800px - IE8 will ignore the code it can't translate.*/
+	height: 800px;
+	min-height: 100vh;
+
+}
+
+h1 {
+	/*position in the centre of the page*/
+	position: absolute;
+	/*sets up coordinate system*/
+	top:50%;
+	left:50%;
+	/*will centre but it's the top left corner that's centred*/
+	/*image is 500px by 264px - use negative margin to pull the image into position. Wouldn't really use negative margin for anything else other than this*/
+	/*margin:-132px 0 0 -250px;*/
+
+	/*transform in CSS3 can be used to scale, move, rotate, skew*/
+	/*translate moves along x + y axis*/
+	/*percentages within translate are relative to the object you are moving*/
+	transform: translate(-50%, -50%);
+	/*webkit (safari) still uses a vendor prefix for transform but all other browsers have now adopted transform as a standard rule*/
+	-webkit-transform: translate (-50%, -50%);
+	}
+
+header a{
+	position: absolute;
+	bottom: 20px;
+
+}
+
+.intro{
+	background-color: #e0e3e6;
+	padding: 50px 0 50px 0;
+
+}
+
+
+h2{
+	font-size: 26px;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin: 0 0 50px 0;
+}
+
+
+/*set a width and position content in the centre*/
+.feature{
+	max-width: 720px;
+	margin: 0 auto 0 auto;
+	padding: 50px 0 50px 0;
+}
+
+/*just the images in the section class=feature, causing images to stack on top of each other. Once you use display block you lose text align centre*/
+.feature img{
+	display: block;
+/*lost the text align centre because of display block - now we need to centre like we would a section or group*/
+	margin: 15px auto 15px auto;
+}
+
+.full-photo{
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover; 
+	/*create window effect where images are fixed in place as we scroll*/
+	background-attachment: fixed;
+	/*fix absolutely positioning issue - reset the coordinates system to the current section*/
+	position: relative;
+}
+
+.blue-lagoon {
+		background-image: url(..//images/blue-lagoon.jpg);
+	}
+
+.pool {
+		background-image: url(..//images/pool.jpg);
+
+}
+
+.forest {
+		background-image: url(..//images/forest.jpg);
+
+}
+
+.boat {
+		
+	background-image: url(..//images/boat.jpg);
+
+}
+
+.river{
+		background-image: url(..//images/river.jpg);
+}
+
+
+h3{
+	color: #ffffff;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-weight: 300;
+	/*position at the bottom with absolute*/
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	/*when you are using position absolute or fixed items will lose the width 100% so we add it back in to centre the text*/
+}
+
+h2{
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 300;
+	padding: 0 0 50px;
+}
+
+
+.mailchimp-form{
+	background-color: #f3f4f5;
+}
+
+/*mailchimp form */
+
+.mailchimp-form{
+	background-color: #f3f4f5;
+	padding: 50px 0 50px 0;
+}
+
+form{
+	width: 100%;
+}
+
+label{
+	/*hide this label rather than deleting it so that screen readers can still see the tag in the html*/
+	display: none;
+}
+
+
+/*type email */
+/*set width to 100% to override input default width, max width on top will stope the input from stretching all the way across*/
+
+input{
+	width: 100%;
+	max-width: 860px;
+	border: 2px solid #24292d;
+	margin: 10px 0 10px 0;
+	padding: 10px 10px 10px 10px;
+	/*remove default blue outline when typing in box*/
+	outline: none;
+	text-align: center;
+	transition: border 0.5s;
+	/*transition - when any styles change e.g. when focusing on the input the border will fade from black to green instead of just switching to the new colour instantly*/
+}
+
+/*while an input is active (user has clicked inside) we can stle with :focus*/
+
+input:focus{
+	border: 2px solid #16b898;
+}
+
+input[type="email"]{
+	
+}
+
+/*type submit*/
+input[type="submit"]{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
